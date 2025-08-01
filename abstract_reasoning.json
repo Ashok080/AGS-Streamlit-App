@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ar_001",
+    "pattern": "\u2b24 \u279d \u2b24\u2b24 \u279d \u2b24\u2b24\u2b24 \u279d ?",
+    "question": "What comes next in the pattern?",
+    "answer": "\u2b24\u2b24\u2b24\u2b24",
+    "reasoning_type": "abstract reasoning"
+  },
+  {
+    "id": "ar_002",
+    "pattern": "\u25b3 \u2b1b \u25b3 \u25b3 \u2b1b \u25b3 \u25b3 \u25b3 \u2b1b",
+    "question": "What shape comes next?",
+    "answer": "\u25b3",
+    "reasoning_type": "abstract reasoning"
+  }
+]

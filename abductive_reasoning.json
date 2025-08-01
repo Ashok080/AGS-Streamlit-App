@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ab_001",
+    "situation": "You walk into the kitchen and see the fridge door open and milk spilled on the floor.",
+    "question": "What might have happened?",
+    "answer": "Someone may have opened the fridge, taken out the milk, and accidentally spilled it.",
+    "reasoning_type": "abductive reasoning"
+  },
+  {
+    "id": "ab_002",
+    "situation": "You see wet footprints leading from the bathroom.",
+    "question": "What is a likely explanation?",
+    "answer": "Someone probably took a shower and walked out without drying their feet.",
+    "reasoning_type": "abductive reasoning"
+  }
+]

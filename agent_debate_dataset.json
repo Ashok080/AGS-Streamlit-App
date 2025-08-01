@@ -1,0 +1,20 @@
+[
+  {
+    "id": "debate_001",
+    "topic": "Is artificial intelligence more likely to benefit or harm humanity?",
+    "agent_pro": "AI can revolutionize healthcare, climate science, and education, creating massive benefits.",
+    "agent_con": "AI poses existential risks if misaligned with human values or used maliciously."
+  },
+  {
+    "id": "debate_002",
+    "topic": "Should all education be conducted online?",
+    "agent_pro": "Online education is scalable, accessible, and adaptable to personalized learning.",
+    "agent_con": "Physical interaction and hands-on experience are essential for social and cognitive development."
+  },
+  {
+    "id": "debate_003",
+    "topic": "Is universal basic income a good idea?",
+    "agent_pro": "UBI ensures financial stability in an automated future, reducing poverty and inequality.",
+    "agent_con": "UBI may disincentivize work and create inflationary pressure, harming the economy."
+  }
+]
