@@ -1,0 +1,28 @@
+[
+  {
+    "id": "gr_001",
+    "situation": "Lena is studying late every night and watching online tutorials.",
+    "question": "What is Lena's likely goal?",
+    "options": [
+      "To pass an exam",
+      "To become famous",
+      "To sleep better",
+      "To learn to cook"
+    ],
+    "answer": "To pass an exam",
+    "reasoning_type": "goal reasoning"
+  },
+  {
+    "id": "gr_002",
+    "situation": "Tom is saving money and researching flight tickets.",
+    "question": "What goal is Tom trying to achieve?",
+    "options": [
+      "To travel",
+      "To buy a house",
+      "To donate",
+      "To pay debt"
+    ],
+    "answer": "To travel",
+    "reasoning_type": "goal reasoning"
+  }
+]
