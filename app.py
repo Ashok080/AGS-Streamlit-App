@@ -25,18 +25,35 @@ def load_dataset(filename):
 def ags_reasoning(example):
     return f"🤖 AGS says: '{example}' likely implies logical thinking or emotional reasoning.'"
 
-# 🔽 Dataset selector
-datasets = list_datasets()
+# 🕽️ Dataset selector
+if not os.path.exists(DATA_DIR):
+    st.error("The 'datasets' folder is missing. Please upload your datasets.")
+    st.stop()
+
+try:
+    datasets = list_datasets()
+except Exception as e:
+    st.error(f"Error reading datasets folder: {e}")
+    st.stop()
+
+if not datasets:
+    st.warning("No .json files found in the datasets folder.")
+    st.stop()
+
 selected = st.selectbox("Choose a dataset to explore:", datasets)
 
 if selected:
-    data = load_dataset(selected)
-    st.success(f"Loaded `{selected}` ✅")
-    
-    # Display preview
-    preview = data[:3] if isinstance(data, list) else list(data.items())[:3]
-    st.json(preview)
+    try:
+        data = load_dataset(selected)
+        st.success(f"Loaded `{selected}` ✅")
 
-    if isinstance(data, list) and st.button("Run AGS Reasoning on Sample"):
-        st.markdown("### 🧠 AGS Reasoning Output")
-        st.info(ags_reasoning(data[0]))
+        # Display preview
+        preview = data[:3] if isinstance(data, list) else list(data.items())[:3]
+        st.json(preview)
+
+        if isinstance(data, list) and st.button("Run AGS Reasoning on Sample"):
+            st.markdown("### 🧠 AGS Reasoning Output")
+            st.info(ags_reasoning(data[0]))
+
+    except Exception as e:
+        st.error(f"Failed to load dataset: {e}")
